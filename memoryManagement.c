@@ -14,22 +14,22 @@ void recursion(int x){
     recursion(x-1);
 }
 
+int *hp = NULL;
 void mallocInHeap(int x){
-    if(x == 0){
-        return;
+    hp = (int*)malloc(sizeof(int) * x);
+    for(int i = 0; i < x; i++){
+        printf("Heap Top: %p\n", &hp[i]);
     }
-    int *hp = (int*)malloc(sizeof(int));
-    printf("Heap Top: %p\n", hp);
-    mallocInHeap(x-1);
     free(hp);
 }
 
-int *hp2 = NULL;
 void mallocInHeap2(int x){
-    hp2 = (int*)malloc(sizeof(int) * x);
-    for(int i = 0; i < x; i++){
-        printf("Heap2 Top: %p\n", &hp2[i]);
+    if(x == 0){
+        return;
     }
+    int *hp2 = (int*)malloc(sizeof(int));
+    printf("Heap2 Top: %p\n", hp2);
+    mallocInHeap2(x-1);
     free(hp2);
 }
 
@@ -45,7 +45,7 @@ char name = 'a';
 
 int main(){
     printf("1st global var (cnt: int): %p\n", &cnt);
-    printf("2nd global var (hp2: pointer): %p\n", &hp2);
+    printf("2nd global var (hp2: pointer): %p\n", &hp);
     printf("3rd global var (name: char): %p\n", &name);
     recursion(3);
     mallocInHeap(3);
