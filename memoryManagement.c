@@ -45,7 +45,7 @@ char name = 'a';
 
 int main(){
     printf("1st global var (cnt: int): %p\n", &cnt);
-    printf("2nd global var (hp2: pointer): %p\n", &hp);
+    printf("2nd global var (hp: pointer): %p\n", &hp);
     printf("3rd global var (name: char): %p\n", &name);
     recursion(3);
     mallocInHeap(3);
