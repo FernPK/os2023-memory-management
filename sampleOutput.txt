@@ -1,0 +1,12 @@
+1st global var (cnt: int): 0x102af8008
+2nd global var (hp2: pointer): 0x102af8010
+3rd global var (name: char): 0x102af8000
+Stack Top: 0x16d30f048
+Stack Top: 0x16d30f028
+Stack Top: 0x16d30f008
+Heap Top: 0x13e606b90
+Heap Top: 0x13e606b94
+Heap Top: 0x13e606b98
+Heap2 Top: 0x13e606b90
+Heap2 Top: 0x13e606b30
+Heap2 Top: 0x13e606b40
