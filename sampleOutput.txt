@@ -1,12 +1,9 @@
-1st global var (cnt: int): 0x100b70008
-2nd global var (hp: pointer): 0x100b70010
-3rd global var (name: char): 0x100b70000
-Stack Top: 0x16f297048
-Stack Top: 0x16f297028
-Stack Top: 0x16f297008
-Heap Top: 0x127606b90
-Heap Top: 0x127606b94
-Heap Top: 0x127606b98
-Heap2 Top: 0x127606b90
-Heap2 Top: 0x127606b30
-Heap2 Top: 0x127606b40
+1st global var (cnt: int): 0x104fa0008
+2nd global var (ptr: pointer): 0x104fa0010
+3rd global var (name: char): 0x104fa0000
+Stack Top: 0x16ae66ff8
+Stack Top: 0x16ae66fd8
+Stack Top: 0x16ae66fb8
+Heap Top: 0x15be06b90
+Heap Top: 0x15be06ba0
+Heap Top: 0x15be06bb0
